@@ -24,7 +24,8 @@ Bu alət Windows və Linux sistemlərində Anaconda Navigator, Conda paket menec
 chmod +x anaconda_fix_linux.sh
 ./anaconda_fix_linux.sh
 ```
-***Qeyd 1:** PowerShell-i admin olaraq açın:
+
+**Qeyd 1:** PowerShell-i admin olaraq açın:
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```
@@ -32,3 +33,4 @@ Set-ExecutionPolicy RemoteSigned
 **Qeyd 2:** `.exe` versiyasını yaratmaq üçün:
 ```powershell
 Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -admin
+```

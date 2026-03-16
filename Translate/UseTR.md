@@ -27,7 +27,7 @@ chmod +x anaconda_fix_linux.sh
 ./anaconda_fix_linux.sh
 ```
 
-*** Not 1:** PowerShell'i yönetici olarak açın:
+***Not 1:** PowerShell'i yönetici olarak açın:
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```

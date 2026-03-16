@@ -1,83 +1,75 @@
 # 🛠️ Anaconda Ultimate Repair Tool (Pro v3.5)
-<p align="center">
 
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-  <img src="https://img.shields.io" />
-  
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-3.5%20Pro-blue?style=for-the-badge&logo=anaconda" alt="Version" />
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=for-the-badge&logo=windows" alt="Platform" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
 </p>
 
-Bu alət Anaconda Navigator, Conda paket meneceri və Python mühitlərində yaranan kritik xətaları (DLL 1114, Crash, Path xətaları) avtomatlaşdırılmış şəkildə həll etmək üçün hazırlanmış **peşəkar təmir alətidir**.
---- 
-### 📥 Hazır Proqramı Endir (Windows)
-Texniki kodlarla uğraşmaq istəmirsinizsə, birbaşa hazırlanmış `.exe` versiyasını buradan endirin:
+**Anaconda Ultimate Repair Tool**, Anaconda Navigator, Conda paket meneceri və Python mühitlərində yaranan kritik xətaları (**DLL 1114, Crash, Path xətaları**) avtomatik həll etmək üçün nəzərdə tutulmuş professional təmir alətidir.
+
+---
+
+### 📥 Hazır Proqramı Yüklə (Windows)
+Texniki kodlarla və terminal əmrləri ilə məşğul olmaq istəmirsinizsə, birbaşa hazırlanmış `.exe` versiyasını aşağıdakı düymədən yükləyin:
+
 <p align="center">
-  <a href="https://github.com">
-    <img src="https://img.shields.io" />
+  <a href="https://github.com/hamidmammadov1711/ultimate-anaconda-fix/releases/tag/v3.5">
+    <img src="https://img.shields.io/badge/DOWNLOAD-LATEST_RELEASE-orange?style=for-the-badge&logo=windows&logoColor=white" alt="Download EXE" />
   </a>
 </p>
 
 ---
-## ✨ Əsas Üstünlüklər
 
-* **🔍 Smart Path Discovery:** Conda qovluğunu avtomatik təsbit edir (hətta PATH-da olmasa belə).
+### ✨ Əsas Üstünlüklər
 
-* **🛡️ Advanced Error Handling:** Hər bir addım üçün `Try-Catch` mexanizmi və xəta idarəetməsi.*   **📋 Interactive Menu:** İstifadəçiyə bütün prosesi və ya yalnız müəyyən modulları (məs: DLL təmiri) seçmək imkanı verir.
-* **🧹 Deep System Clean:** Müvəqqəti faylların (Temp), Conda keşlərinin və konflikt yaradan istifadəçi qovluqlarının təmizlənməsi.
-* **📝 Detailed Logging:** Bütün əməliyyatlar masaüstündəki `Anaconda_Repair_Log.txt` faylına qeyd olunur.
-* **⚙️ Modular Design:** Hər bir təmir modulu (DLL, PATH, Crash) ayrıca işləyir və istənilən vaxt yenilənə bilər.
+* **🔍 Ağıllı Yol Tapma:** Conda qovluğunu (PATH-da olmasa belə) avtomatik aşkar edir.
+* **🛡️ Təkmil Xəta İdarəetməsi:** Hər bir addım üçün `Try-Catch` mexanizmi və səhv hesabatı.
+* **📋 İnteraktiv Menyu:** İstifadəçiyə bütün prosesi və ya yalnız müəyyən modulları (məsələn, DLL təmiri) seçmək imkanı verir.
+* **🧹 Dərin Sistem Təmizliyi:** Münaqişə yaradan müvəqqəti faylları (Temp), Conda keşlərini və istifadəçi qovluqlarını təmizləyir.
+* **📝 Ətraflı Loglama:** Bütün əməliyyatlar masaüstündəki `Anaconda_Repair_Log.txt` faylında qeyd olunur.
+* **⚙️ Modulyar Dizayn:** Hər bir təmir modulu (DLL, PATH, Crash) bir-birindən asılı olmayaraq işləyir.
+
 ---
-## 🚀 Quraşdırma və İstifadə
-### 💻 Windows (Skript vasitəsilə)
 
+## 🚀 Quraşdırma və İstifadə
+
+### 💻 Windows (Skript vasitəsilə)
 1. `Windows/ultimate_anaconda_fix.ps1` faylını yükləyin.
-2. PowerShell-i **Administrator** olaraq açın və skript icrası üçün icazə verin:
-   
+2. PowerShell-i **Administrator** olaraq açın və aşağıdakı əmrlə icazə verin:
    ```powershell
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-
+   ```
 3. Skripti işə salın:
    ```powershell
    .\ultimate_anaconda_fix.ps1
   ```
-4. Menyudan `1` seçərək tam təmir prosesini başlayın.
-   
-   
-🐧 Linux (Bash)
-
-   1. Linux/anaconda_fix_linux.sh faylını yükləyin.
-   2. Terminalda icra icazəsi verin və işə salın:
-   
+4. Menyudan `1` seçərək tam təmir prosesinə başlayın.
+### 🐧 Linux (Bash)
+1. `Linux/anaconda_fix_linux.sh` faylını yükləyin.
+2. Terminaldə aşağıdakı əmrlə icazə verin və skripti işə salın:
    ```bash
    chmod +x anaconda_fix_linux.sh
    ./anaconda_fix_linux.sh
    ```
-   
 ------------------------------
-# 🛠️ Developerlər üçün (Build)
-### Skripti özünüz .exe formatına çevirmək istəyirsinizsə:
-
-   1. ps2exe modulunu quraşdırın:
-   
+### 🛠️ Tərtibatçılar üçün (Build)
+Skripti `.exe` formatına çevirmək üçün:
+1. `ps2exe` modulunu quraşdırın:
+   ```powershell
    Install-Module ps2exe -Force
-   
-   2. Kompilyasiya edin:
-   
+   ```
+2. İcra edin:
+   ```powershell
    Invoke-PS2EXE -inputFile "ultimate_anaconda_fix.ps1" -outputFile "AnacondaFixer.exe" -requireAdmin
-   
-   
+   ```  
 ------------------------------
-📂 Layihə Strukturu
+### 📂 Layihə Strukturu
+`📂 Windows	PowerShell` skriptləri və Windows təmir modulları.
 
-* /Windows: PowerShell skriptləri və Windows-a xas təmir modulları.
-* /Linux: Bash skriptləri və mühit təmizləmə əmrləri.
-* /Translate: (English, Turkish) Çoxdilli dəstək faylları.
+`📂 Linux	Bash` skriptləri və mühit təmizləmə əmrləri.
 
-------------------------------
-⚖️ Lisenziya
-Bu layihə MIT Lisenziyası altında qorunur. Detallar üçün LICENSE faylına baxın.
-------------------------------
-
-Təmirə başlamaq üçün yuxarıdakı yaşıl düymədən EXE faylını endirin! 🚀
----
+`📂 Translate`	Azərbaycan və Türk dillərində təlimatlar.
+📄 [LICENSE](./LICENSE)	MIT Lisenziya şərtləri (Bura klikləyərək oxuya bilərsiniz).
+### ⚖️ Lisenziya
+Bu layihə **[MIT Lisenziyası](.ultimate-fix/.LICENSE)** altında lisenziyalaşdırılmışdır. Ətraflı məlumat üçün LICENSE faylına baxın.

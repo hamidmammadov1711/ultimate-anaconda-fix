@@ -52,17 +52,22 @@
 2. Разрешите выполнение скриптов:
    ```powershell
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
 
-```
+### 🐧 Linux (Bash)
+Чтобы очистить и исправить Anaconda в Linux:
 
+1. **Скачайте скрипт:** Скачайте файл `Linux/anaconda_fix_linux.sh` из репозитория.
+
+2. **Предоставьте права доступа:** Откройте терминал, перейдите в папку, где находится файл, и предоставьте ему права на выполнение:
+```bash
+chmod +x anaconda_fix_linux.sh
 3. Запустите скрипт:
 
 ```powershell
 .\Anaconda_Repair_Pro.ps1
 
 ```
-
----
 
 ### 🛠️ Для разработчиков (Build)
 

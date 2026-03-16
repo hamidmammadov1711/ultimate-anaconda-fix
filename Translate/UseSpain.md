@@ -63,6 +63,18 @@ Si prefiere trabajar con el código fuente:
 
 ```
 
+### 🐧 Linux (Bash)
+
+Para limpiar y reparar Anaconda en Linux:
+
+1. **Descarga el script:** Descarga el archivo `Linux/anaconda_fix_linux.sh` del repositorio.
+
+2. **Otorga permisos:** Abre una terminal, ve a la carpeta donde se encuentra el archivo y dale permisos de ejecución:
+
+```bash
+chmod +x anaconda_fix_linux.sh
+```
+
 ---
 
 ### 🛠️ Para desarrolladores (Build)

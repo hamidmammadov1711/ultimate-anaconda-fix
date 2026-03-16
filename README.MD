@@ -48,6 +48,19 @@ If you prefer running the raw code:
 ```powershell
    .\Anaconda_Repair_Pro.ps1
    ```
+### 🐧 Linux (Bash)
+To clean and fix Anaconda in Linux:
+
+1. **Download the script:** Download the `Linux/anaconda_fix_linux.sh` file from the repository.
+2. **Give permission:** Open a terminal and go to the folder where the file is located and give it execute permission:
+```bash
+chmod +x anaconda_fix_linux.sh
+```
+3. **Run the script:** Execute the script with sudo to ensure it has the necessary permissions:
+```bash
+sudo ./anaconda_fix_linux.sh
+```   
+
 ### 🛠️ For Developers (How to Build)
 If you want to compile your own *.exe* using the **ps2exe** module:
 Install the module:

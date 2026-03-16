@@ -6,12 +6,16 @@
 <img src="https://img.shields.io/badge/Developer-Hamid%20Mammadov-orange?style=for-the-badge" alt="Developer" />
 </p>
 
-**Anaconda Ultimate Repair Pro**, Anaconda Navigator, Conda paket yöneticisi ve Python ortamlarında meydana gelen kritik hataları (**DLL 1114 hataları, Navigator'ın açılmaması, yol (path) hataları ve izin çakışmaları**) otomatik olarak tespit edip çözen profesyonel bir onarım aracıdır.
+**Anaconda Ultimate Repair Pro**, Anaconda Navigator, Conda paket yöneticisi ve Python ortamlarında meydana gelen kritik
+hataları (**DLL 1114 hataları, Navigator'ın açılmaması, yol (path) hataları ve izin çakışmaları**) otomatik olarak
+tespit edip çözen profesyonel bir onarım aracıdır.
 
 ---
 
 ### 📥 Programı İndirin (Önerilir)
-Teknik kodlarla uğraşmak istemiyorsanız, doğrudan `.exe` formatındaki hazır sürümü indirin. Bu sürüm kararlılık için optimize edilmiştir ve otomatik yönetici (Admin) izniyle çalışır.
+
+Teknik kodlarla uğraşmak istemiyorsanız, doğrudan `.exe` formatındaki hazır sürümü indirin. Bu sürüm kararlılık için
+optimize edilmiştir ve otomatik yönetici (Admin) izniyle çalışır.
 
 <p align="center">
 <a href="https://github.com/hamidmammadov1711/ultimate-anaconda-fix/releases/latest">
@@ -22,6 +26,7 @@ Teknik kodlarla uğraşmak istemiyorsanız, doğrudan `.exe` formatındaki hazı
 ---
 
 ### ✨ v4.0 Sürümünün Avantajları
+
 * **Kalıcı Arayüz:** İşlemler bittikten sonra program hemen kapanmaz, sonuçları incelemenize olanak tanır.
 * **Dinamik Yol Tespiti:** Conda'nın `C:`, `D:` veya sistem değişkenlerindeki konumunu otomatik olarak bulur.
 * **Süreç İzolasyonu:** Arka planda takılı kalmış Python ve Anaconda süreçlerini zorla sonlandırır.
@@ -33,12 +38,15 @@ Teknik kodlarla uğraşmak istemiyorsanız, doğrudan `.exe` formatındaki hazı
 ### 🚀 Kullanım Talimatları
 
 #### 💻 Windows (.exe sürümü)
+
 1. "Releases" bölümünden `Anaconda_Fixer_v4.exe` dosyasını indirin.
 2. Dosyaya sağ tıklayın ve **"Yönetici olarak çalıştır"** (Run as Administrator) seçeneğini kullanın.
 3. Menü aracılığıyla istediğiniz onarımı seçin (Tam onarım için `1` seçilmesi önerilir).
 
 #### 📜 PowerShell (Script - .ps1)
+
 Kaynak kodla çalışmayı tercih ediyorsanız:
+
 1. PowerShell'i **Yönetici** olarak açın.
 2. Komut dosyası çalıştırma iznini etkinleştirin:
    ```powershell
@@ -52,28 +60,37 @@ Kaynak kodla çalışmayı tercih ediyorsanız:
 
 ```
 
+### 🐧 Linux (Bash)
 
+Linux'ta Anaconda'yı temizlemek ve düzeltmek için:
 
----
+1. **Betik dosyasını indirin:** Depodan `Linux/anaconda_fix_linux.sh` dosyasını indirin.
+
+2. **İzin verin:** Bir terminal açın ve dosyanın bulunduğu klasöre gidin ve çalıştırma izni verin:
+
+```bash
+chmod +x anaconda_fix_linux.sh  
+./anaconda_fix_linux.sh
+
+```
 
 ### 🛠️ Geliştiriciler İçin (Build)
 
 Kendi `.exe` dosyanızı `ps2exe` modülü ile oluşturmak isterseniz:
 
 1. Modülü yükleyin:
+
 ```powershell
 Install-Module ps2exe -Force
 
 ```
 
-
 2. Derleme komutunu çalıştırın:
+
 ```powershell
 Invoke-PS2EXE -InputFile ".\Anaconda_Repair_Pro.ps1" -OutputFile ".\Anaconda_Fixer_v4.exe" -Title "Anaconda Repair Suite Pro" -Version "4.0.0"
 
 ```
-
-
 
 ---
 
@@ -91,7 +108,8 @@ Bu proje **MIT Lisansı** ile lisanslanmıştır. Daha fazla bilgi için *LICENS
 
 ### 🤝 Destek
 
-Eğer bu araç sorununuzu çözmenize yardımcı olduysa, depoyu (repository) **Star** ⭐ etmeyi ve diğer geliştirici arkadaşlarınızla paylaşmayı unutmayın!
+Eğer bu araç sorununuzu çözmenize yardımcı olduysa, depoyu (repository) **Star** ⭐ etmeyi ve diğer geliştirici
+arkadaşlarınızla paylaşmayı unutmayın!
 
 Hazırlayan: Hamid Mammadov
 

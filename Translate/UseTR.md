@@ -80,4 +80,4 @@ Invoke-PS2EXE -inputFile "ultimate_anaconda_fix.ps1" -outputFile "AnacondaFixer.
 
 -----------------------------
 ### ⚖️ Lisans
-Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakın.
+Bu proje **MIT Lisansı** altında lisanslanmıştır. Daha fazla bilgi için *LICENSE* dosyasına bakın.

@@ -87,5 +87,5 @@ Skripti `.exe` formatına çevirmək üçün:
 
 ### ⚖️ Lisenziya
 
-Bu layihə **[MIT Lisenziyası](/..LICENSE)** altında lisenziyalaşdırılmışdır. Ətraflı məlumat üçün LICENSE
+Bu layihə **MIT Lisenziyası** altında lisenziyalaşdırılmışdır. Ətraflı məlumat üçün *LICENSE*
 faylına baxın.

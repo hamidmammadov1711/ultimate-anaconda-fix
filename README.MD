@@ -77,4 +77,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ------------------------------
 
 Download the EXE file from the green button above to start the repair! 🚀
+
 ---

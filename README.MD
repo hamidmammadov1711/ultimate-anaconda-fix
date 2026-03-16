@@ -1,73 +1,78 @@
-# 🛠️ Anaconda Ultimate Repair Tool (Pro v3.5)
+# 🛠️ Anaconda Ultimate Repair Pro (v4.0)
 
 <p align="center">
-<img src="https://img.shields.io/badge/Version-3.5%20Pro-blue?style=for-the-badge&logo=anaconda" alt="Version" />
-<img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=for-the-badge&logo=windows" alt="Platform" />
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+<img src="https://img.shields.io/badge/Version-4.0%20Pro-green?style=for-the-badge&logo=anaconda" alt="Version" />
+<img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows" alt="Platform" />
+<img src="https://img.shields.io/badge/Developer-Hamid%20Mammadov-orange?style=for-the-badge" alt="Developer" />
 </p>
 
-**Anaconda Ultimate Repair Tool** is a professional repair tool designed to automatically resolve critical errors (**DLL 1114, Crash, Path errors**) in Anaconda Navigator, Conda package manager and Python environments.
+**Anaconda Ultimate Repair Pro** is a professional-grade recovery tool designed to fix critical environment issues, including **DLL 1114 errors, Navigator crashes, permission conflicts**, and corrupted Conda paths.
 
 ---
 
-### 📥 Download Ready-made Program (Windows)
-If you don't want to deal with technical codes and terminal commands, download the prepared `.exe` version directly from the button below:
+### 📥 Download Ready-to-Use Tool (Recommended)
+Avoid terminal commands by downloading the pre-compiled executable. This version is optimized for stability and will not close prematurely.
 
 <p align="center">
-<a href="https://github.com/hamidmammadov1711/ultimate-anaconda-fix/releases/tag/v3.5">
-<img src="https://img.shields.io/badge/DOWNLOAD-LATEST_RELEASE-orange?style=for-the-badge&logo=windows&logoColor=white" alt="Download EXE" />
+<a href="https://github.com/hamidmammadov1711/ultimate-anaconda-fix/releases/latest">
+<img src="https://img.shields.io/badge/DOWNLOAD-LATEST_EXE-orange?style=for-the-badge&logo=windows&logoColor=white" alt="Download EXE" />
 </a>
 </p>
 
 ---
 
-### ✨ Main Advantages
-
-* **🔍 Smart Path Detection:** Automatically detects the Conda folder (even if it is not in the PATH).
-* **🛡️ Advanced Error Handling:** `Try-Catch` mechanism and error reporting for each step.
-* **📋 Interactive Menu:** Allows the user to select the entire process or only specific modules (e.g. DLL repair).
-* **🧹 Deep System Cleaning:** Cleans up conflicting temporary files (Temp), Conda caches and user folders.
-* **📝 Detailed Logging:** All operations are recorded in the `Anaconda_Repair_Log.txt` file on the desktop.
-* **⚙️ Modular Design:** Each repair module (DLL, PATH, Crash) works independently of each other.
+### ✨ Key Improvements in v4.0
+* **Persistent Interface:** The program remains open after tasks are completed to let you review results.
+* **Dynamic Path Discovery:** Automatically searches `C:`, `D:`, and System Environment variables for Conda.
+* **Enhanced Process Isolation:** Forcefully clears hidden Python and Anaconda lock-files.
+* **System Integrity Integration:** Combines `SFC` and `DISM` repairs for Windows-related dependencies.
+* **Automated Admin Elevation:** Automatically requests Administrator privileges on startup.
 
 ---
 
-## 🚀 Installation and Usage
+### 🚀 Usage Instructions
 
-### 💻 Windows (via Script)
-1. Download the `Windows/ultimate_anaconda_fix.ps1` file.
-2. Open PowerShell as **Administrator** and grant permissions with the following command:
+#### 💻 Windows (Execuable - .exe)
+1. Download `Anaconda_Fixer_v4.exe` from the **Releases** section.
+2. **Right-click** and select **Run as Administrator**.
+3. Choose an option from the menu (Option `1` is recommended for full recovery).
+
+#### 📜 PowerShell (Script - .ps1)
+If you prefer running the raw code:
+1. Open PowerShell as **Administrator**.
+2. Enable script execution:
+   ```powershell
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+3. Execute the script:
 ```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-3. Run the script:
+   .\Anaconda_Repair_Pro.ps1
+   ```
+### 🛠️ For Developers (How to Build)
+If you want to compile your own *.exe* using the **ps2exe** module:
+Install the module:
 ```powershell
-.\ultimate_anaconda_fix.ps1
+Install-Module ps2exe -Force  
 ```
-4. Start the full repair process by selecting `1` from the menu.
-### 🐧 Linux (Bash)
-1. Download the `Linux/anaconda_fix_linux.sh` file.
-2. In the terminal, grant permissions and run the script with the following command:
-```bash
-chmod +x anaconda_fix_linux.sh
-./anaconda_fix_linux.sh
-```
------------------------------
-### 🛠️ For Developers (Build)
-To convert the script to `.exe` format:
-1. Install the `ps2exe` module:
+2. Run the compilation command:
 ```powershell
-Install-Module ps2exe -Force
+Invoke-PS2EXE -InputFile ".\Anaconda_Repair_Pro.ps1" `
+              -OutputFile ".\Anaconda_Fixer_v4.exe" `
+              -Title "Anaconda Repair Suite Pro" `
+              -Description "Professional environment repair tool" `
+              -Company "Hamid Mammadov" `
+              -Version "4.0.0" `
+              -IconFile ".\icon.ico"
 ```
-2. Execute:
-```powershell
-Invoke-PS2EXE -inputFile "ultimate_anaconda_fix.ps1" -outputFile "AnacondaFixer.exe" -requireAdmin
-```
------------------------------
 ### 📂 Project Structure
-* `/Windows`: PowerShell scripts and Windows-specific repair modules.
-* `/Linux`: Bash scripts and environment cleanup commands.
-* `/Translate`: Multilingual support files (English, Turkish, Azerbaijani).
-------------------------------
-### ⚖️ License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+**/Windows:** Refined PowerShell scripts and the latest repair logic.
+
+**/Linux:** Legacy Bash scripts for environment cleanup.
+
+**/Assets:** (Optional) Icon files and design resources.
+
+### 📝 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### 🤝 Support
+If this tool helped you, feel free to Star ⭐ the repository and share it with other developers!

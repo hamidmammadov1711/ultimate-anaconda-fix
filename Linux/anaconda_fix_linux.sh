@@ -1,6 +1,6 @@
 #!/bin/bash
 # ANACONDA REPAIR SUITE - LINUX EDITION
-# Author: Hamid Mammadov
+# Dveloper: Hamid Mammadov
 
 echo "Stopping Anaconda/Python processes..."
 pkill -f python

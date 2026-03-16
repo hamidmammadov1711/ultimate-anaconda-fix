@@ -24,7 +24,7 @@ Bu alət Windows və Linux sistemlərində Anaconda Navigator, Conda paket menec
 chmod +x anaconda_fix_linux.sh
 ./anaconda_fix_linux.sh
 ```
-*** Qeyd 1:** PowerShell-i admin olaraq açın:
+***Qeyd 1:** PowerShell-i admin olaraq açın:
 ```powershell
 Set-ExecutionPolicy RemoteSigned
 ```

@@ -1,6 +1,6 @@
 # 🛠️ Anaconda Ultimate Repair Tool (Pro v3.5)
 
-Bu alət Windows və Linux sistemlərində Anaconda Navigator, Conda paket meneceri və Python mühitlərində yaranan kritik xətaları (DLL 1114, Crash, Path və.s kimi problemləri) təmizləmək və bərpa etmək üçün nəzərdə tutulmuşdur.
+Bu alət Windows və Linux sistemlərində Anaconda Navigator, Conda paket meneceri və Python mühitlərində yaranan kritik xətaları (DLL 1114, Crash, Path və.s kimi problemləri) təmizləmək və bərpa etmək üçün nəzərdə tutulmuşdur. 
 
 ## ✨ Xüsusiyyətlər
 - **Smart Discovery:** Conda qovluğunu avtomatik tapır.
@@ -24,7 +24,11 @@ Bu alət Windows və Linux sistemlərində Anaconda Navigator, Conda paket menec
 chmod +x anaconda_fix_linux.sh
 ./anaconda_fix_linux.sh
 ```
+*** Qeyd 1:** PowerShell-i admin olaraq açın:
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
 
-**Qeyd:** `.exe` versiyasını yaratmaq üçün:
+**Qeyd 2:** `.exe` versiyasını yaratmaq üçün:
 ```powershell
 Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -admin

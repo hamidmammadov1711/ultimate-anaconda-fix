@@ -26,6 +26,12 @@ Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -adm
 chmod +x anaconda_fix_linux.sh
 ./anaconda_fix_linux.sh
 ```
-**Not:** `.exe` sürümünü yaratmak için:Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -admin
+
+*** Not 1:** PowerShell'i yönetici olarak açın:
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+**Not 2:** `.exe` sürümünü yaratmak için:Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -admin
 ```
 

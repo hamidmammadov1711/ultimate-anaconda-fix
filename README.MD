@@ -26,6 +26,12 @@ chmod +x anaconda_fix_linux.sh
 ./anaconda_fix_linux.sh
 ```
 
-**Note:** To create the `.exe` version:
+*** Note 1:** Open PowerShell as admin:
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+**Note 2:** To create the `.exe` version:
 ```powershell
 Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -admin
+```

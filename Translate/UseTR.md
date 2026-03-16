@@ -1,83 +1,104 @@
-# 🛠️ Anaconda Ultimate Repair Tool (Pro v3.5)
+# 🛠️ Anaconda Ultimate Repair Pro (v4.0)
 
 <p align="center">
-<img src="https://img.shields.io/badge/Version-3.5%20Pro-blue?style=for-the-badge&logo=anaconda" alt="Version" />
-<img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey?style=for-the-badge&logo=windows" alt="Platform" />
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+<img src="https://img.shields.io/badge/Version-4.0%20Pro-green?style=for-the-badge&logo=anaconda" alt="Version" />
+<img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge&logo=windows" alt="Platform" />
+<img src="https://img.shields.io/badge/Developer-Hamid%20Mammadov-orange?style=for-the-badge" alt="Developer" />
 </p>
 
-**Anaconda Ultimate Repair Tool**, Windows'ta kritik hataları (**DLL 1114, Çökme, Yol hataları**) otomatik olarak çözmek için tasarlanmış profesyonel bir onarım aracıdır. Anaconda Navigator, Conda paket yöneticisi ve Python ortamları.
+**Anaconda Ultimate Repair Pro**, Anaconda Navigator, Conda paket yöneticisi ve Python ortamlarında meydana gelen kritik hataları (**DLL 1114 hataları, Navigator'ın açılmaması, yol (path) hataları ve izin çakışmaları**) otomatik olarak tespit edip çözen profesyonel bir onarım aracıdır.
 
-(Bu metinde "Anaconda Navigator" ifadesi ve "Conda paket yöneticisi" ifadesi yer almaktadır.) ---
+---
 
-### 📥 Hazır Programı İndirin (Windows)
-Teknik kodlarla ve terminal komutlarıyla uğraşmak istemiyorsanız, aşağıdaki düğmeden doğrudan hazırlanmış `.exe` sürümünü indirin:
+### 📥 Programı İndirin (Önerilir)
+Teknik kodlarla uğraşmak istemiyorsanız, doğrudan `.exe` formatındaki hazır sürümü indirin. Bu sürüm kararlılık için optimize edilmiştir ve otomatik yönetici (Admin) izniyle çalışır.
 
 <p align="center">
-<a href="https://github.com/hamidmammadov1711/ultimate-anaconda-fix/releases/tag/v3.5">
-<img src="https://img.shields.io/badge/DOWNLOAD-LATEST_RELEASE-orange?style=for-the-badge&logo=windows&logoColor=white" alt="EXE İndir" />
+<a href="https://github.com/hamidmammadov1711/ultimate-anaconda-fix/releases/latest">
+<img src="https://img.shields.io/badge/DOWNLOAD-LATEST_EXE-orange?style=for-the-badge&logo=windows&logoColor=white" alt="Download EXE" />
 </a>
 </p>
 
 ---
 
-### ✨ Başlıca Avantajlar
-
-* **🔍 Akıllı Yol Algılama:** Conda klasörünü otomatik olarak algılar (PATH'te olmasa bile).
-
-* **🛡️ Gelişmiş Hata Yönetimi:** Her adım için `Try-Catch` mekanizması ve hata raporlaması.
-
-* **📋 Etkileşimli Menü:** Kullanıcının tüm işlemi veya yalnızca belirli modülleri (örneğin DLL onarımı) seçmesine olanak tanır.
-
-* **🧹 Derin Sistem Temizliği:** Çakışan geçici dosyaları (Temp), Conda önbelleklerini ve kullanıcı klasörlerini temizler.
-
-* **📝 Ayrıntılı Günlük Kaydı:** Tüm işlemler masaüstündeki `Anaconda_Repair_Log.txt` dosyasına kaydedilir.
-
-* **⚙️ Modüler Tasarım:** Her onarım modülü (DLL, PATH, Çökme) birbirinden bağımsız olarak çalışır.
+### ✨ v4.0 Sürümünün Avantajları
+* **Kalıcı Arayüz:** İşlemler bittikten sonra program hemen kapanmaz, sonuçları incelemenize olanak tanır.
+* **Dinamik Yol Tespiti:** Conda'nın `C:`, `D:` veya sistem değişkenlerindeki konumunu otomatik olarak bulur.
+* **Süreç İzolasyonu:** Arka planda takılı kalmış Python ve Anaconda süreçlerini zorla sonlandırır.
+* **Sistem Bütünlüğü:** Windows'un kritik sistem dosyalarını onarmak için entegre `SFC` ve `DISM` araçları.
+* **İzinlerin Onarımı:** Klasör erişim haklarını düzeltir ve kritik DLL kütüphanelerini yeniden kaydeder.
 
 ---
 
-## 🚀 Kurulum ve Kullanım
+### 🚀 Kullanım Talimatları
 
-### 💻 Windows (Komut Dosyası aracılığıyla)
-1. `Windows/ultimate_anaconda_fix.ps1` dosyasını indirin.
-2. PowerShell'i **Yönetici** olarak açın ve aşağıdaki komutla izinleri verin:
+#### 💻 Windows (.exe sürümü)
+1. "Releases" bölümünden `Anaconda_Fixer_v4.exe` dosyasını indirin.
+2. Dosyaya sağ tıklayın ve **"Yönetici olarak çalıştır"** (Run as Administrator) seçeneğini kullanın.
+3. Menü aracılığıyla istediğiniz onarımı seçin (Tam onarım için `1` seçilmesi önerilir).
+
+#### 📜 PowerShell (Script - .ps1)
+Kaynak kodla çalışmayı tercih ediyorsanız:
+1. PowerShell'i **Yönetici** olarak açın.
+2. Komut dosyası çalıştırma iznini etkinleştirin:
+   ```powershell
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+```
+
+3. Betiği çalıştırın:
 ```powershell
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-3. Komut dosyasını çalıştırın:
-```powershell
-.\ultimate_anaconda_fix.ps1
-```
-4. Menüden `1`'i seçerek tamir işlemini başlatın.
+.\Anaconda_Repair_Pro.ps1
 
-### 🐧 Linux (Bash)
-1. `Linux/anaconda_fix_linux.sh` dosyasını indirin.
-
-2. Terminalde, izinleri verin ve aşağıdaki komutla betiği çalıştırın:
-```bash
-chmod +x anaconda_fix_linux.sh
-./anaconda_fix_linux.sh
 ```
------------------------------
-### 🛠️ Geliştiriciler İçin (Derleme)
-Betik dosyasını `.exe` formatına dönüştürmek için:
-1. `ps2exe` modülünü yükleyin:
+
+
+
+---
+
+### 🛠️ Geliştiriciler İçin (Build)
+
+Kendi `.exe` dosyanızı `ps2exe` modülü ile oluşturmak isterseniz:
+
+1. Modülü yükleyin:
 ```powershell
 Install-Module ps2exe -Force
+
 ```
-2. Çalıştırın:
+
+
+2. Derleme komutunu çalıştırın:
 ```powershell
-Invoke-PS2EXE -inputFile "ultimate_anaconda_fix.ps1" -outputFile "AnacondaFixer.exe" -requireAdmin
+Invoke-PS2EXE -InputFile ".\Anaconda_Repair_Pro.ps1" -OutputFile ".\Anaconda_Fixer_v4.exe" -Title "Anaconda Repair Suite Pro" -Version "4.0.0"
+
 ```
------------------------------
+
+
+
+---
+
 ### 📂 Proje Yapısı
-* `/Windows`: PowerShell betikleri ve Windows'a özgü onarım modülleri.
 
-* `/Linux`: Bash betikleri ve ortam temizleme komutları.
+`📂 Windows` PowerShell betikleri ve Windows onarım modülleri.
 
-* `/Translate`: Çok dilli destek dosyaları (İngilizce, Türkçe, Azerbaycan dili).
+`📂 Linux` Bash betikleri ve ortam temizleme komutları.
 
------------------------------
+`📂 Translate` Türkçe ve Azerbaycan dillerinde talimatlar.
+
 ### ⚖️ Lisans
-Bu proje **MIT Lisansı** altında lisanslanmıştır. Daha fazla bilgi için *LICENSE* dosyasına bakın.
+
+Bu proje **MIT Lisansı** ile lisanslanmıştır. Daha fazla bilgi için *LICENSE* dosyasına bakınız.
+
+### 🤝 Destek
+
+Eğer bu araç sorununuzu çözmenize yardımcı olduysa, depoyu (repository) **Star** ⭐ etmeyi ve diğer geliştirici arkadaşlarınızla paylaşmayı unutmayın!
+
+Hazırlayan: Hamid Mammadov
+
+```
+
+---
+
+
+
+```

@@ -1,37 +1,88 @@
-# 🛠️ Anaconda Ultimate Repair Tool (Pro v3.5)
+# 🛠️ Anaconda Ultimate Onarım Aracı (Pro v3.5)
+<p align="center">
 
-Bu araç, Windows ve Linux sistemlerinde Anaconda Navigator, Conda paket yöneticisi ve Python ortamlarında meydana gelen kritik hataları (DLL 1114, Çökme, Yol sorunları) temizlemek ve onarmak için tasarlanmıştır.
-## ✨ Özellikler
-- **Smart Discovery:** Conda klasörünü otomatik olarak bulur.
-- **Error Handling:** Hataların yönetimi ve her adım için Log sistemi.
-- **Deep Clean:** Temp ve Cache dosyalarının tamamen temizlenmesi.
-- **Interactive Menu:** Tek tek və ya tam temizleme seçimi.
+<img src="https://img.shields.io" />
+<img src="https://img.shields.io" />
+<img src="https://img.shields.io" />
 
-## 🚀 Kullanım Şartları
+</p>
 
-### 💻 Windows (PowerShell)
-1. Windows directory-den `ultimate_fix.ps1` dosyasını indirin.
-2. Dosyaya sağ tıklayın ve **"Run with PowerShell"** seçeneğini seçin (Veya Yönetici olarak çalıştırın).
-3. Menü göründüğünde `1` yazarak tam onarımı başlatın.
-4. Terminal açın ve aşağıdaki komutu girin:
+Bu araç, Anaconda Navigator, Conda paket yöneticisi ve Python ortamlarında meydana gelen kritik hataları (DLL 1114, Çökme, Yol hataları) otomatik olarak çözmek için tasarlanmış **profesyonel bir onarım aracıdır**. ---
+### 📥 Hazır Programı İndirin (Windows)
+Teknik kodlarla uğraşmak istemiyorsanız, hazırlanmış `.exe` sürümünü doğrudan buradan indirin:
+<p align="center">
+<a href="https://github.com">
+<img src="https://img.shields.io" />
+</a>
+</p>
+
+---
+## ✨ Ana Avantajlar
+
+* **🔍 Akıllı Yol Keşfi:** Conda klasörünü otomatik olarak algılar (PATH'te olmasa bile).
+
+* **🛡️ Gelişmiş Hata Yönetimi:** Her adım için `Try-Catch` mekanizması ve hata yönetimi.* **📋 Etkileşimli Menü:** Kullanıcının tüm işlemi veya yalnızca belirli modülleri (örneğin DLL onarımı) seçmesine olanak tanır.
+
+* **🧹 Derin Sistem Temizliği:** Çakışmalara neden olan geçici dosyaları (Temp), Conda önbelleklerini ve kullanıcı klasörlerini temizler.
+
+* **📝 Ayrıntılı Kayıt:** Tüm işlemler masaüstündeki `Anaconda_Repair_Log.txt` dosyasına kaydedilir.
+
+* **⚙️ Modüler Tasarım:** Her onarım modülü (DLL, PATH, Çökme) ayrı ayrı çalışır ve her zaman güncellenebilir.
+
+---
+## 🚀 Kurulum ve Kullanım
+### 💻 Windows (Komut Dosyası Aracılığıyla)
+
+1. `Windows/ultimate_anaconda_fix.ps1` dosyasını indirin.
+
+2. PowerShell'i **Yönetici** olarak açın ve komut dosyasını çalıştırma izni verin:
+
 ```powershell
-Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -admin
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+3. Komut dosyasını çalıştırın:
+```powershell
+.\ultimate_anaconda_fix.ps1
 ```
-#### 🐧 Linux
-1. Linux directory-den `ultimate_fix.sh` dosyasını indirin.
-2. Dosyaya sağ tıklayın ve **"Run as root"** seçeneğini seçin.
-3. Menü göründüğünde `1` yazarak tam onarımı başlatın.
-4. Terminal açın ve aşağıdaki komutu girin:
+4. Menüden `1`'i seçerek tam onarım işlemine başlayın.
+
+🐧 Linux (Bash)
+
+1. Linux/anaconda_fix_linux.sh dosyasını indirin.
+
+2. Terminalde çalıştırma izni verin ve çalıştırın:
+
 ```bash
 chmod +x anaconda_fix_linux.sh
 ./anaconda_fix_linux.sh
 ```
 
-*Not 1:* PowerShell'i yönetici olarak açın:
-```powershell
-Set-ExecutionPolicy RemoteSigned
-```
+-----------------------------
+# 🛠️ Geliştiriciler İçin (Derleme)
+### Komut dosyasını kendiniz .exe formatına dönüştürmek istiyorsanız:
 
-**Not 2:** `.exe` sürümünü yaratmak için:Invoke-PS2EXE -inputFile "ultimate_fix.ps1" -outputFile "AnacondaFixer.exe" -admin
-```
+1. ps2exe modülünü yükleyin:
 
+Install-Module ps2exe -Force
+
+2. Derleyin:
+
+Invoke-PS2EXE -inputFile "ultimate_anaconda_fix.ps1" -outputFile "AnacondaFixer.exe" -requireAdmin
+
+-----------------------------
+📂 Proje Yapısı
+
+* /Windows: PowerShell komut dosyaları ve Windows'a özgü onarım modülleri.
+
+* /Linux: Bash komut dosyaları ve ortam temizleme komutları.
+
+* /Çeviri: (İngilizce, Türkçe) Çok dilli destek dosyaları.
+
+-----------------------------
+⚖️ Lisans
+Bu proje MIT Lisansı altında lisanslanmıştır. Ayrıntılar için LICENSE dosyasına bakın.
+
+----------------------------
+
+Onarıma başlamak için yukarıdaki yeşil düğmeden EXE dosyasını indirin! 🚀
+---
